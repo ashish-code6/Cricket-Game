@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.heading {
+    text-align: center;
+    margin-top: 50px;
+    text-decoration: underline;
+    animation: heading 5s infinite;
+}
+
+@keyframes heading {
+    0% {
+        color: red;
+    }
+    20% {
+        color: blue;
+    }
+    40% {
+        color: chartreuse;
+    }
+    60% {
+        color: chocolate;
+    }
+    80% {
+        color: darkmagenta;
+    }
+    100% {
+        color: red;
+    }
+}
+
+.choose {
+    text-align: center;
+    margin: 25px;
+}
+
+.btn {
+    font-size: 24px;
+    padding: 20px 40px;
+    margin: 10px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    background-color: blueviolet;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+    background-color: darkviolet;
+    transform: scale(1.05);
+}
+
+.btn:active {
+    background-color: mediumslateblue;
+    transform: scale(0.95);
+}
+
+#bat::before {
+    content: "🏏";
+    display: block;
+    font-size: 30px;
+}
+
+#ball::before {
+    content: "⚽";
+    display: block;
+    font-size: 30px;
+}
+
+#wicket::before {
+    content: "🏏";
+    display: block;
+    font-size: 30px;
+}
+
+.display {
+    width: 200px;
+    height: 60px;
+    font-size: 24px;
+    padding: 10px;
+    margin: 20px auto;
+    border: 2px solid #333;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #fff;
+    display: flex;
+}
